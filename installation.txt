@@ -1,0 +1,6 @@
+Send in CMD:
+docker build -t node-chat .
+docker run -it -p 4000:3000 node-chat
+
+Afterwards, you can access the programme at:
+http://localhost:4000

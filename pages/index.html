@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div id="active-users-tab">
+    <form id="userList" action=""></form>
+</div>
+
+<div id="loginPopup">
+    <form name="login" action="">
+        <div style="text-align: center;">Username:</div>
+        <div style="text-align: center;"><input id="username" autocomplete="off" size="15"/></div>
+        <div style="text-align: center;">Password:</div>
+        <div style="text-align: center;"><input type="password" id="password" autocomplete="off" size="15"/></div>
+        <div style="text-align: center;"><input autofocus type="submit" id="submit" value="login"/></div>
+        <div style="text-align: center;">Upload your Profile-Photo:</div>
+        <div style="text-align: center;"><input type="file" id="selectProfilePhoto" value="Upload Photo"/></div>
+    </form>
+</div>
+
+
+<div id="messagesBox">
+    <ul id="messages"></ul>
+</div>
+<form id="form" action="">
+    <input id="input" autocomplete="off"/>
+    <button class="formButton" >Send</button>
+    <label class="formButton" style="text-align: center; vertical-align: middle; line-height: 32px; font-size: small;">
+        Uploade File
+        <input type="file" id="fileUpload" />
+    </label>
+
+</form>
+
+</form>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="/auth.js"></script>
+<script src="/index.js"></script>
+<script src="/chat.js"></script>
+
+</body>
+</html>
